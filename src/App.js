@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+// import Counter from './components/Counter/Counter';
+import PlayerOCounter from './components/Counter/PlayerOCounter';
+import PlayerXCounter from './components/Counter/PlayerXCounter';
+import TicTacToe from './components/TicTacToe/TicTacToe';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="navbar-logo">React Practice: Lifting State Up</div>
+
+      {/* <Counter /> */}
+      <PlayerXCounter />
+      <PlayerOCounter />
+
+      <TicTacToe />
     </div>
   );
-}
+};
 
 export default App;
